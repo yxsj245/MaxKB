@@ -185,7 +185,7 @@ class RegisterSerializer(ApiMixin, serializers.Serializer):
 
         return True
 
-    @valid_license(model=User, count=2,
+    @valid_license(model=User, count=9999,
                    message=_(
                        "The community version supports up to 2 users. If you need more users, please contact us (https://fit2cloud.com/)."))
     @transaction.atomic
