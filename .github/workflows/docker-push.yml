@@ -31,7 +31,7 @@ jobs:
       - name: 缓存并构建推送DockerHub
         uses: docker/build-push-action@v4
         with:
-          context: ./installer  # 指向installer目录
+          context: .  # 改为项目根目录
           file: ./installer/Dockerfile  # 指定Dockerfile路径
           push: true  # 构建后自动推送
           tags: |
