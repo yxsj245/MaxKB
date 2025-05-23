@@ -35,6 +35,6 @@ jobs:
           file: ./installer/Dockerfile  # 指定Dockerfile路径
           push: true  # 构建后自动推送
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/maxkb:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/maxkb:test
           cache-from: type=gha  # 使用GitHub缓存
           cache-to: type=gha,mode=max  # 写入GitHub缓存 
